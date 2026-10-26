@@ -12,6 +12,7 @@ the public [FALCON benchmark](https://snel-repo.github.io/falcon/) (Karpowicz et
 
 See [LEADERBOARD.md](LEADERBOARD.md). The confirmatory analysis is pre-registered in
 [ANALYSIS_PLAN.md](ANALYSIS_PLAN.md); everything currently on the leaderboard is exploratory.
+Pretrained entries carry a per-dataset overlap mark (was the test subject in pretraining?): [OVERLAP.md](OVERLAP.md).
 
 ![decay curves](figures/decay_curves.png)
 
