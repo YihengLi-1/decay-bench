@@ -1,0 +1,916 @@
+{
+ "task": "h1",
+ "protocol": "B",
+ "model": "gru_zsess",
+ "source": "local",
+ "rows": [
+  {
+   "train": "1925-01-01",
+   "test": "sub-HumanPitt-held-in-calib_ses-19250108T110520",
+   "gap": 7,
+   "r2": 0.36351367277098995
+  },
+  {
+   "train": "1925-01-01",
+   "test": "sub-HumanPitt-held-in-calib_ses-19250108T111022",
+   "gap": 7,
+   "r2": 0.21022554831197895
+  },
+  {
+   "train": "1925-01-01",
+   "test": "sub-HumanPitt-held-in-calib_ses-19250108T111455",
+   "gap": 7,
+   "r2": 0.16159711976623842
+  },
+  {
+   "train": "1925-01-01",
+   "test": "sub-HumanPitt-held-in-calib_ses-19250113T120811",
+   "gap": 12,
+   "r2": 0.05635611366102305
+  },
+  {
+   "train": "1925-01-01",
+   "test": "sub-HumanPitt-held-in-calib_ses-19250113T121303",
+   "gap": 12,
+   "r2": 0.13106017035152936
+  },
+  {
+   "train": "1925-01-01",
+   "test": "sub-HumanPitt-held-in-calib_ses-19250115T110633",
+   "gap": 14,
+   "r2": 0.054650442405759024
+  },
+  {
+   "train": "1925-01-01",
+   "test": "sub-HumanPitt-held-in-calib_ses-19250115T111328",
+   "gap": 14,
+   "r2": 0.1827223734527453
+  },
+  {
+   "train": "1925-01-01",
+   "test": "sub-HumanPitt-held-in-calib_ses-19250119T113543",
+   "gap": 18,
+   "r2": 0.10432499556938309
+  },
+  {
+   "train": "1925-01-01",
+   "test": "sub-HumanPitt-held-in-calib_ses-19250119T114045",
+   "gap": 18,
+   "r2": 0.18734293954973244
+  },
+  {
+   "train": "1925-01-01",
+   "test": "sub-HumanPitt-held-in-calib_ses-19250120T115044",
+   "gap": 19,
+   "r2": 0.11484019885976511
+  },
+  {
+   "train": "1925-01-01",
+   "test": "sub-HumanPitt-held-in-calib_ses-19250120T115537",
+   "gap": 19,
+   "r2": 0.1284936426564421
+  },
+  {
+   "train": "1925-01-01",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250126T113454",
+   "gap": 25,
+   "r2": 0.17106582141901822
+  },
+  {
+   "train": "1925-01-01",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250126T114029",
+   "gap": 25,
+   "r2": 0.005799411641919064
+  },
+  {
+   "train": "1925-01-01",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250127T120333",
+   "gap": 26,
+   "r2": -0.25130430889075617
+  },
+  {
+   "train": "1925-01-01",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250127T120826",
+   "gap": 26,
+   "r2": 0.18398652313426575
+  },
+  {
+   "train": "1925-01-01",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250129T112555",
+   "gap": 28,
+   "r2": 0.04070096755932376
+  },
+  {
+   "train": "1925-01-01",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250129T113059",
+   "gap": 28,
+   "r2": -0.09634779310574526
+  },
+  {
+   "train": "1925-01-01",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250202T113958",
+   "gap": 32,
+   "r2": 0.03612100011847536
+  },
+  {
+   "train": "1925-01-01",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250202T114452",
+   "gap": 32,
+   "r2": 0.031214599917010998
+  },
+  {
+   "train": "1925-01-01",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250203T113515",
+   "gap": 33,
+   "r2": -0.10922279221173326
+  },
+  {
+   "train": "1925-01-01",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250203T114018",
+   "gap": 33,
+   "r2": -0.026504011358945246
+  },
+  {
+   "train": "1925-01-01",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250206T112219",
+   "gap": 36,
+   "r2": -0.0012423175720996506
+  },
+  {
+   "train": "1925-01-01",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250206T112712",
+   "gap": 36,
+   "r2": 0.17033262496210183
+  },
+  {
+   "train": "1925-01-01",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250209T111826",
+   "gap": 39,
+   "r2": -0.05240873523216795
+  },
+  {
+   "train": "1925-01-01",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250209T112327",
+   "gap": 39,
+   "r2": 0.09984363125144585
+  },
+  {
+   "train": "1925-01-08",
+   "test": "sub-HumanPitt-held-in-calib_ses-19250101T111740",
+   "gap": 7,
+   "r2": 0.4177342736134685
+  },
+  {
+   "train": "1925-01-08",
+   "test": "sub-HumanPitt-held-in-calib_ses-19250101T112404",
+   "gap": 7,
+   "r2": 0.3524604392765744
+  },
+  {
+   "train": "1925-01-08",
+   "test": "sub-HumanPitt-held-in-calib_ses-19250113T120811",
+   "gap": 5,
+   "r2": 0.2908803893213665
+  },
+  {
+   "train": "1925-01-08",
+   "test": "sub-HumanPitt-held-in-calib_ses-19250113T121303",
+   "gap": 5,
+   "r2": 0.2547624321690867
+  },
+  {
+   "train": "1925-01-08",
+   "test": "sub-HumanPitt-held-in-calib_ses-19250115T110633",
+   "gap": 7,
+   "r2": 0.16984149027986262
+  },
+  {
+   "train": "1925-01-08",
+   "test": "sub-HumanPitt-held-in-calib_ses-19250115T111328",
+   "gap": 7,
+   "r2": 0.288589163012462
+  },
+  {
+   "train": "1925-01-08",
+   "test": "sub-HumanPitt-held-in-calib_ses-19250119T113543",
+   "gap": 11,
+   "r2": 0.22872039611393033
+  },
+  {
+   "train": "1925-01-08",
+   "test": "sub-HumanPitt-held-in-calib_ses-19250119T114045",
+   "gap": 11,
+   "r2": 0.22226375189585937
+  },
+  {
+   "train": "1925-01-08",
+   "test": "sub-HumanPitt-held-in-calib_ses-19250120T115044",
+   "gap": 12,
+   "r2": 0.13729009568896292
+  },
+  {
+   "train": "1925-01-08",
+   "test": "sub-HumanPitt-held-in-calib_ses-19250120T115537",
+   "gap": 12,
+   "r2": 0.1389533238716666
+  },
+  {
+   "train": "1925-01-08",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250126T113454",
+   "gap": 18,
+   "r2": 0.2781286572335784
+  },
+  {
+   "train": "1925-01-08",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250126T114029",
+   "gap": 18,
+   "r2": 0.21089208759343517
+  },
+  {
+   "train": "1925-01-08",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250127T120333",
+   "gap": 19,
+   "r2": -0.28262278292576615
+  },
+  {
+   "train": "1925-01-08",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250127T120826",
+   "gap": 19,
+   "r2": 0.1138541861307096
+  },
+  {
+   "train": "1925-01-08",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250129T112555",
+   "gap": 21,
+   "r2": 0.11685410236070179
+  },
+  {
+   "train": "1925-01-08",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250129T113059",
+   "gap": 21,
+   "r2": -0.03353606553426042
+  },
+  {
+   "train": "1925-01-08",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250202T113958",
+   "gap": 25,
+   "r2": -0.00016956929005534528
+  },
+  {
+   "train": "1925-01-08",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250202T114452",
+   "gap": 25,
+   "r2": -0.06412782087648657
+  },
+  {
+   "train": "1925-01-08",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250203T113515",
+   "gap": 26,
+   "r2": -0.14281019176998144
+  },
+  {
+   "train": "1925-01-08",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250203T114018",
+   "gap": 26,
+   "r2": 0.04107378695969145
+  },
+  {
+   "train": "1925-01-08",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250206T112219",
+   "gap": 29,
+   "r2": 0.21565467252235074
+  },
+  {
+   "train": "1925-01-08",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250206T112712",
+   "gap": 29,
+   "r2": 0.24333420101703931
+  },
+  {
+   "train": "1925-01-08",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250209T111826",
+   "gap": 32,
+   "r2": -0.15555116066844088
+  },
+  {
+   "train": "1925-01-08",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250209T112327",
+   "gap": 32,
+   "r2": 0.22889457385472017
+  },
+  {
+   "train": "1925-01-13",
+   "test": "sub-HumanPitt-held-in-calib_ses-19250101T111740",
+   "gap": 12,
+   "r2": 0.15151652689479886
+  },
+  {
+   "train": "1925-01-13",
+   "test": "sub-HumanPitt-held-in-calib_ses-19250101T112404",
+   "gap": 12,
+   "r2": 0.18278093799417158
+  },
+  {
+   "train": "1925-01-13",
+   "test": "sub-HumanPitt-held-in-calib_ses-19250108T110520",
+   "gap": 5,
+   "r2": 0.32060566946639646
+  },
+  {
+   "train": "1925-01-13",
+   "test": "sub-HumanPitt-held-in-calib_ses-19250108T111022",
+   "gap": 5,
+   "r2": 0.2205440837427373
+  },
+  {
+   "train": "1925-01-13",
+   "test": "sub-HumanPitt-held-in-calib_ses-19250108T111455",
+   "gap": 5,
+   "r2": 0.3219319880905204
+  },
+  {
+   "train": "1925-01-13",
+   "test": "sub-HumanPitt-held-in-calib_ses-19250115T110633",
+   "gap": 2,
+   "r2": 0.2854333625381695
+  },
+  {
+   "train": "1925-01-13",
+   "test": "sub-HumanPitt-held-in-calib_ses-19250115T111328",
+   "gap": 2,
+   "r2": 0.3326311331237828
+  },
+  {
+   "train": "1925-01-13",
+   "test": "sub-HumanPitt-held-in-calib_ses-19250119T113543",
+   "gap": 6,
+   "r2": 0.23630879719525777
+  },
+  {
+   "train": "1925-01-13",
+   "test": "sub-HumanPitt-held-in-calib_ses-19250119T114045",
+   "gap": 6,
+   "r2": 0.21021112284359345
+  },
+  {
+   "train": "1925-01-13",
+   "test": "sub-HumanPitt-held-in-calib_ses-19250120T115044",
+   "gap": 7,
+   "r2": 0.2543504996438344
+  },
+  {
+   "train": "1925-01-13",
+   "test": "sub-HumanPitt-held-in-calib_ses-19250120T115537",
+   "gap": 7,
+   "r2": 0.17099968631798354
+  },
+  {
+   "train": "1925-01-13",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250126T113454",
+   "gap": 13,
+   "r2": 0.38967943314427667
+  },
+  {
+   "train": "1925-01-13",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250126T114029",
+   "gap": 13,
+   "r2": 0.07157200930724048
+  },
+  {
+   "train": "1925-01-13",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250127T120333",
+   "gap": 14,
+   "r2": 0.10070154735633786
+  },
+  {
+   "train": "1925-01-13",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250127T120826",
+   "gap": 14,
+   "r2": -0.09157377737242908
+  },
+  {
+   "train": "1925-01-13",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250129T112555",
+   "gap": 16,
+   "r2": 0.13098284112965558
+  },
+  {
+   "train": "1925-01-13",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250129T113059",
+   "gap": 16,
+   "r2": 0.16166420258144357
+  },
+  {
+   "train": "1925-01-13",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250202T113958",
+   "gap": 20,
+   "r2": -0.10194986818191881
+  },
+  {
+   "train": "1925-01-13",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250202T114452",
+   "gap": 20,
+   "r2": -0.10577831520085225
+  },
+  {
+   "train": "1925-01-13",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250203T113515",
+   "gap": 21,
+   "r2": -0.034676883157157154
+  },
+  {
+   "train": "1925-01-13",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250203T114018",
+   "gap": 21,
+   "r2": -0.1669073404822037
+  },
+  {
+   "train": "1925-01-13",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250206T112219",
+   "gap": 24,
+   "r2": 0.19371619172224647
+  },
+  {
+   "train": "1925-01-13",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250206T112712",
+   "gap": 24,
+   "r2": -0.2014362362865078
+  },
+  {
+   "train": "1925-01-13",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250209T111826",
+   "gap": 27,
+   "r2": -0.16842804987187632
+  },
+  {
+   "train": "1925-01-13",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250209T112327",
+   "gap": 27,
+   "r2": 0.18795328326157618
+  },
+  {
+   "train": "1925-01-15",
+   "test": "sub-HumanPitt-held-in-calib_ses-19250101T111740",
+   "gap": 14,
+   "r2": 0.27224877882759185
+  },
+  {
+   "train": "1925-01-15",
+   "test": "sub-HumanPitt-held-in-calib_ses-19250101T112404",
+   "gap": 14,
+   "r2": 0.27555548886664377
+  },
+  {
+   "train": "1925-01-15",
+   "test": "sub-HumanPitt-held-in-calib_ses-19250108T110520",
+   "gap": 7,
+   "r2": 0.24532029903561975
+  },
+  {
+   "train": "1925-01-15",
+   "test": "sub-HumanPitt-held-in-calib_ses-19250108T111022",
+   "gap": 7,
+   "r2": 0.10290730258048547
+  },
+  {
+   "train": "1925-01-15",
+   "test": "sub-HumanPitt-held-in-calib_ses-19250108T111455",
+   "gap": 7,
+   "r2": 0.2696027046570104
+  },
+  {
+   "train": "1925-01-15",
+   "test": "sub-HumanPitt-held-in-calib_ses-19250113T120811",
+   "gap": 2,
+   "r2": 0.3432998037290162
+  },
+  {
+   "train": "1925-01-15",
+   "test": "sub-HumanPitt-held-in-calib_ses-19250113T121303",
+   "gap": 2,
+   "r2": 0.18697689535448453
+  },
+  {
+   "train": "1925-01-15",
+   "test": "sub-HumanPitt-held-in-calib_ses-19250119T113543",
+   "gap": 4,
+   "r2": 0.3373747577750133
+  },
+  {
+   "train": "1925-01-15",
+   "test": "sub-HumanPitt-held-in-calib_ses-19250119T114045",
+   "gap": 4,
+   "r2": 0.23781927174866707
+  },
+  {
+   "train": "1925-01-15",
+   "test": "sub-HumanPitt-held-in-calib_ses-19250120T115044",
+   "gap": 5,
+   "r2": 0.3399844499747793
+  },
+  {
+   "train": "1925-01-15",
+   "test": "sub-HumanPitt-held-in-calib_ses-19250120T115537",
+   "gap": 5,
+   "r2": 0.27859251311843214
+  },
+  {
+   "train": "1925-01-15",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250126T113454",
+   "gap": 11,
+   "r2": 0.20763434458066657
+  },
+  {
+   "train": "1925-01-15",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250126T114029",
+   "gap": 11,
+   "r2": -0.10116240497157174
+  },
+  {
+   "train": "1925-01-15",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250127T120333",
+   "gap": 12,
+   "r2": 0.044591840731131774
+  },
+  {
+   "train": "1925-01-15",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250127T120826",
+   "gap": 12,
+   "r2": 0.07552176152867678
+  },
+  {
+   "train": "1925-01-15",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250129T112555",
+   "gap": 14,
+   "r2": 0.11830237182100986
+  },
+  {
+   "train": "1925-01-15",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250129T113059",
+   "gap": 14,
+   "r2": -0.1471639000051188
+  },
+  {
+   "train": "1925-01-15",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250202T113958",
+   "gap": 18,
+   "r2": -0.04568608732849494
+  },
+  {
+   "train": "1925-01-15",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250202T114452",
+   "gap": 18,
+   "r2": -0.023999541608111002
+  },
+  {
+   "train": "1925-01-15",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250203T113515",
+   "gap": 19,
+   "r2": -0.09690511391745059
+  },
+  {
+   "train": "1925-01-15",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250203T114018",
+   "gap": 19,
+   "r2": -0.0029069180128614524
+  },
+  {
+   "train": "1925-01-15",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250206T112219",
+   "gap": 22,
+   "r2": -0.02730362094034141
+  },
+  {
+   "train": "1925-01-15",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250206T112712",
+   "gap": 22,
+   "r2": 0.1925932454517541
+  },
+  {
+   "train": "1925-01-15",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250209T111826",
+   "gap": 25,
+   "r2": 0.11490569197809872
+  },
+  {
+   "train": "1925-01-15",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250209T112327",
+   "gap": 25,
+   "r2": 0.07855518237676061
+  },
+  {
+   "train": "1925-01-19",
+   "test": "sub-HumanPitt-held-in-calib_ses-19250101T111740",
+   "gap": 18,
+   "r2": 0.24808780238888706
+  },
+  {
+   "train": "1925-01-19",
+   "test": "sub-HumanPitt-held-in-calib_ses-19250101T112404",
+   "gap": 18,
+   "r2": 0.22885789697313086
+  },
+  {
+   "train": "1925-01-19",
+   "test": "sub-HumanPitt-held-in-calib_ses-19250108T110520",
+   "gap": 11,
+   "r2": 0.2699643887539166
+  },
+  {
+   "train": "1925-01-19",
+   "test": "sub-HumanPitt-held-in-calib_ses-19250108T111022",
+   "gap": 11,
+   "r2": 0.12545705315997832
+  },
+  {
+   "train": "1925-01-19",
+   "test": "sub-HumanPitt-held-in-calib_ses-19250108T111455",
+   "gap": 11,
+   "r2": 0.1990773364642668
+  },
+  {
+   "train": "1925-01-19",
+   "test": "sub-HumanPitt-held-in-calib_ses-19250113T120811",
+   "gap": 6,
+   "r2": 0.3099922697069491
+  },
+  {
+   "train": "1925-01-19",
+   "test": "sub-HumanPitt-held-in-calib_ses-19250113T121303",
+   "gap": 6,
+   "r2": 0.2907702171278454
+  },
+  {
+   "train": "1925-01-19",
+   "test": "sub-HumanPitt-held-in-calib_ses-19250115T110633",
+   "gap": 4,
+   "r2": 0.37910046196470887
+  },
+  {
+   "train": "1925-01-19",
+   "test": "sub-HumanPitt-held-in-calib_ses-19250115T111328",
+   "gap": 4,
+   "r2": 0.3423598701777249
+  },
+  {
+   "train": "1925-01-19",
+   "test": "sub-HumanPitt-held-in-calib_ses-19250120T115044",
+   "gap": 1,
+   "r2": 0.36879507166066045
+  },
+  {
+   "train": "1925-01-19",
+   "test": "sub-HumanPitt-held-in-calib_ses-19250120T115537",
+   "gap": 1,
+   "r2": 0.350303564891536
+  },
+  {
+   "train": "1925-01-19",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250126T113454",
+   "gap": 7,
+   "r2": 0.23138137959707092
+  },
+  {
+   "train": "1925-01-19",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250126T114029",
+   "gap": 7,
+   "r2": 0.011553780551847834
+  },
+  {
+   "train": "1925-01-19",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250127T120333",
+   "gap": 8,
+   "r2": 0.09287814213987552
+  },
+  {
+   "train": "1925-01-19",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250127T120826",
+   "gap": 8,
+   "r2": 0.029427450532122396
+  },
+  {
+   "train": "1925-01-19",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250129T112555",
+   "gap": 10,
+   "r2": 0.1325507055225099
+  },
+  {
+   "train": "1925-01-19",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250129T113059",
+   "gap": 10,
+   "r2": 0.05011093581600868
+  },
+  {
+   "train": "1925-01-19",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250202T113958",
+   "gap": 14,
+   "r2": -0.0249178795385843
+  },
+  {
+   "train": "1925-01-19",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250202T114452",
+   "gap": 14,
+   "r2": 0.0035891666531636893
+  },
+  {
+   "train": "1925-01-19",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250203T113515",
+   "gap": 15,
+   "r2": -0.006000365371017455
+  },
+  {
+   "train": "1925-01-19",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250203T114018",
+   "gap": 15,
+   "r2": 0.041345581083482345
+  },
+  {
+   "train": "1925-01-19",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250206T112219",
+   "gap": 18,
+   "r2": -0.12352586493931184
+  },
+  {
+   "train": "1925-01-19",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250206T112712",
+   "gap": 18,
+   "r2": 0.15617418432353983
+  },
+  {
+   "train": "1925-01-19",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250209T111826",
+   "gap": 21,
+   "r2": -0.06317240561551889
+  },
+  {
+   "train": "1925-01-19",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250209T112327",
+   "gap": 21,
+   "r2": 0.09754138706836116
+  },
+  {
+   "train": "1925-01-20",
+   "test": "sub-HumanPitt-held-in-calib_ses-19250101T111740",
+   "gap": 19,
+   "r2": 0.22158623550558862
+  },
+  {
+   "train": "1925-01-20",
+   "test": "sub-HumanPitt-held-in-calib_ses-19250101T112404",
+   "gap": 19,
+   "r2": 0.22047273436285686
+  },
+  {
+   "train": "1925-01-20",
+   "test": "sub-HumanPitt-held-in-calib_ses-19250108T110520",
+   "gap": 12,
+   "r2": 0.17382805737868365
+  },
+  {
+   "train": "1925-01-20",
+   "test": "sub-HumanPitt-held-in-calib_ses-19250108T111022",
+   "gap": 12,
+   "r2": 0.16512849833019602
+  },
+  {
+   "train": "1925-01-20",
+   "test": "sub-HumanPitt-held-in-calib_ses-19250108T111455",
+   "gap": 12,
+   "r2": 0.23107554204134045
+  },
+  {
+   "train": "1925-01-20",
+   "test": "sub-HumanPitt-held-in-calib_ses-19250113T120811",
+   "gap": 7,
+   "r2": 0.14812916823846234
+  },
+  {
+   "train": "1925-01-20",
+   "test": "sub-HumanPitt-held-in-calib_ses-19250113T121303",
+   "gap": 7,
+   "r2": 0.18897263642707982
+  },
+  {
+   "train": "1925-01-20",
+   "test": "sub-HumanPitt-held-in-calib_ses-19250115T110633",
+   "gap": 5,
+   "r2": 0.39013511489141806
+  },
+  {
+   "train": "1925-01-20",
+   "test": "sub-HumanPitt-held-in-calib_ses-19250115T111328",
+   "gap": 5,
+   "r2": 0.43730831938606674
+  },
+  {
+   "train": "1925-01-20",
+   "test": "sub-HumanPitt-held-in-calib_ses-19250119T113543",
+   "gap": 1,
+   "r2": 0.2230488001896339
+  },
+  {
+   "train": "1925-01-20",
+   "test": "sub-HumanPitt-held-in-calib_ses-19250119T114045",
+   "gap": 1,
+   "r2": 0.36558419227568073
+  },
+  {
+   "train": "1925-01-20",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250126T113454",
+   "gap": 6,
+   "r2": 0.19067129102175387
+  },
+  {
+   "train": "1925-01-20",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250126T114029",
+   "gap": 6,
+   "r2": 0.041580750671337915
+  },
+  {
+   "train": "1925-01-20",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250127T120333",
+   "gap": 7,
+   "r2": 0.11991025624415133
+  },
+  {
+   "train": "1925-01-20",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250127T120826",
+   "gap": 7,
+   "r2": 0.08560437244350257
+  },
+  {
+   "train": "1925-01-20",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250129T112555",
+   "gap": 9,
+   "r2": 0.1772912178312146
+  },
+  {
+   "train": "1925-01-20",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250129T113059",
+   "gap": 9,
+   "r2": -0.0026848376765127194
+  },
+  {
+   "train": "1925-01-20",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250202T113958",
+   "gap": 13,
+   "r2": -0.024621377144276653
+  },
+  {
+   "train": "1925-01-20",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250202T114452",
+   "gap": 13,
+   "r2": -0.02066059971796536
+  },
+  {
+   "train": "1925-01-20",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250203T113515",
+   "gap": 14,
+   "r2": 0.17029406793147803
+  },
+  {
+   "train": "1925-01-20",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250203T114018",
+   "gap": 14,
+   "r2": 0.07301145905974804
+  },
+  {
+   "train": "1925-01-20",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250206T112219",
+   "gap": 17,
+   "r2": -0.05842644984399274
+  },
+  {
+   "train": "1925-01-20",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250206T112712",
+   "gap": 17,
+   "r2": 0.16781284193486054
+  },
+  {
+   "train": "1925-01-20",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250209T111826",
+   "gap": 20,
+   "r2": 0.2668818924988924
+  },
+  {
+   "train": "1925-01-20",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250209T112327",
+   "gap": 20,
+   "r2": 0.2742185191051192
+  }
+ ],
+ "summary": {
+  "1-3d": 0.30700910297037054,
+  "4-7d": 0.24928723143681833,
+  "8-14d": 0.11307552384205163,
+  "15-30d": 0.056327302125980416,
+  "31-400d": 0.022147741306036726,
+  "collapsed": 0.0,
+  "n_pairs": 149,
+  "slope": -0.10071956914593426,
+  "slope_ci": [
+   -0.11875882138674088,
+   -0.07741812502530197
+  ]
+ }
+}

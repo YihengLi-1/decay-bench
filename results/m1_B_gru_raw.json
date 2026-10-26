@@ -1,0 +1,165 @@
+{
+ "task": "m1",
+ "protocol": "B",
+ "model": "gru_raw",
+ "source": "local",
+ "rows": [
+  {
+   "train": "2012-09-24",
+   "test": "sub-MonkeyL-held-in-calib_ses-20120926_behavior+ecephys",
+   "gap": 2,
+   "r2": -0.2804024296930021
+  },
+  {
+   "train": "2012-09-24",
+   "test": "sub-MonkeyL-held-in-calib_ses-20120927_behavior+ecephys",
+   "gap": 3,
+   "r2": -0.16710781786117188
+  },
+  {
+   "train": "2012-09-24",
+   "test": "sub-MonkeyL-held-in-calib_ses-20120928_behavior+ecephys",
+   "gap": 4,
+   "r2": 0.2544685443214357
+  },
+  {
+   "train": "2012-09-24",
+   "test": "sub-MonkeyL-held-out-calib_ses-20121004_behavior+ecephys",
+   "gap": 10,
+   "r2": -0.47772904636610286
+  },
+  {
+   "train": "2012-09-24",
+   "test": "sub-MonkeyL-held-out-calib_ses-20121017_behavior+ecephys",
+   "gap": 23,
+   "r2": -0.8792956936382145
+  },
+  {
+   "train": "2012-09-24",
+   "test": "sub-MonkeyL-held-out-calib_ses-20121024_behavior+ecephys",
+   "gap": 30,
+   "r2": -0.8129952176083792
+  },
+  {
+   "train": "2012-09-26",
+   "test": "sub-MonkeyL-held-in-calib_ses-20120924_behavior+ecephys",
+   "gap": 2,
+   "r2": -0.02701698105866901
+  },
+  {
+   "train": "2012-09-26",
+   "test": "sub-MonkeyL-held-in-calib_ses-20120927_behavior+ecephys",
+   "gap": 1,
+   "r2": 0.3458528081069196
+  },
+  {
+   "train": "2012-09-26",
+   "test": "sub-MonkeyL-held-in-calib_ses-20120928_behavior+ecephys",
+   "gap": 2,
+   "r2": 0.2061181636025548
+  },
+  {
+   "train": "2012-09-26",
+   "test": "sub-MonkeyL-held-out-calib_ses-20121004_behavior+ecephys",
+   "gap": 8,
+   "r2": -0.33949066239752207
+  },
+  {
+   "train": "2012-09-26",
+   "test": "sub-MonkeyL-held-out-calib_ses-20121017_behavior+ecephys",
+   "gap": 21,
+   "r2": -0.22869401461146333
+  },
+  {
+   "train": "2012-09-26",
+   "test": "sub-MonkeyL-held-out-calib_ses-20121024_behavior+ecephys",
+   "gap": 28,
+   "r2": -0.296470786894079
+  },
+  {
+   "train": "2012-09-27",
+   "test": "sub-MonkeyL-held-in-calib_ses-20120924_behavior+ecephys",
+   "gap": 3,
+   "r2": -0.08985003561820844
+  },
+  {
+   "train": "2012-09-27",
+   "test": "sub-MonkeyL-held-in-calib_ses-20120926_behavior+ecephys",
+   "gap": 1,
+   "r2": -0.6361726449051739
+  },
+  {
+   "train": "2012-09-27",
+   "test": "sub-MonkeyL-held-in-calib_ses-20120928_behavior+ecephys",
+   "gap": 1,
+   "r2": 0.11325758763413034
+  },
+  {
+   "train": "2012-09-27",
+   "test": "sub-MonkeyL-held-out-calib_ses-20121004_behavior+ecephys",
+   "gap": 7,
+   "r2": -0.2997454835227308
+  },
+  {
+   "train": "2012-09-27",
+   "test": "sub-MonkeyL-held-out-calib_ses-20121017_behavior+ecephys",
+   "gap": 20,
+   "r2": -0.8375186000291948
+  },
+  {
+   "train": "2012-09-27",
+   "test": "sub-MonkeyL-held-out-calib_ses-20121024_behavior+ecephys",
+   "gap": 27,
+   "r2": -0.37212336439747645
+  },
+  {
+   "train": "2012-09-28",
+   "test": "sub-MonkeyL-held-in-calib_ses-20120924_behavior+ecephys",
+   "gap": 4,
+   "r2": 0.35656203082465604
+  },
+  {
+   "train": "2012-09-28",
+   "test": "sub-MonkeyL-held-in-calib_ses-20120926_behavior+ecephys",
+   "gap": 2,
+   "r2": -1.1655879525601929
+  },
+  {
+   "train": "2012-09-28",
+   "test": "sub-MonkeyL-held-in-calib_ses-20120927_behavior+ecephys",
+   "gap": 1,
+   "r2": -0.777309338464067
+  },
+  {
+   "train": "2012-09-28",
+   "test": "sub-MonkeyL-held-out-calib_ses-20121004_behavior+ecephys",
+   "gap": 6,
+   "r2": -0.8362536237083225
+  },
+  {
+   "train": "2012-09-28",
+   "test": "sub-MonkeyL-held-out-calib_ses-20121017_behavior+ecephys",
+   "gap": 19,
+   "r2": -0.7269982067500004
+  },
+  {
+   "train": "2012-09-28",
+   "test": "sub-MonkeyL-held-out-calib_ses-20121024_behavior+ecephys",
+   "gap": 26,
+   "r2": -0.2965534170821215
+  }
+ ],
+ "summary": {
+  "1-3d": -0.24782186408168805,
+  "4-7d": -0.13124213302124038,
+  "8-14d": -0.40860985438181247,
+  "15-30d": -0.5563311626263661,
+  "collapsed": 0.041666666666666664,
+  "n_pairs": 24,
+  "slope": -0.10670766236632519,
+  "slope_ci": [
+   -0.21102594472887257,
+   0.01365427769107478
+  ]
+ }
+}

@@ -1,0 +1,37 @@
+{
+ "task": "m1",
+ "protocol": "A",
+ "model": "gru_zsess",
+ "source": "local",
+ "rows": [
+  {
+   "train": "all_held_in",
+   "test": "sub-MonkeyL-held-out-calib_ses-20121004_behavior+ecephys",
+   "gap": 6,
+   "r2": 0.6161923294715775
+  },
+  {
+   "train": "all_held_in",
+   "test": "sub-MonkeyL-held-out-calib_ses-20121017_behavior+ecephys",
+   "gap": 19,
+   "r2": 0.45364934546084146
+  },
+  {
+   "train": "all_held_in",
+   "test": "sub-MonkeyL-held-out-calib_ses-20121024_behavior+ecephys",
+   "gap": 26,
+   "r2": 0.42782326262137
+  }
+ ],
+ "summary": {
+  "4-7d": 0.6161923294715775,
+  "15-30d": 0.44073630404110575,
+  "collapsed": 0.0,
+  "n_pairs": 3,
+  "slope": -0.09948884782850466,
+  "slope_ci": [
+   -0.10731933387348234,
+   -0.059650125174440495
+  ]
+ }
+}
