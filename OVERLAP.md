@@ -24,6 +24,15 @@ through the labs' raw archives, which are pretrained on under other aliases.
 presumably different animals. A Chestek-lab monkey N finger dataset (`mender_fingerctx`) is registered but is not
 in either pretraining list.
 
+### NDT3's released FALCON fine-tuned checkpoints saw the held-out days
+
+The fine-tuned checkpoints on Hugging Face (`m1/`, `h1/`, `m2/` for scratch, base_45m and big_350m) were trained
+with `dataset.datasets: [falcon_FALCONM1.*]` (`v5/tune/falcon_m1/_base.yaml`, likewise for H1 and M2). In the
+registry (`contexts/context_registry.py:210-219`) that pattern also matches the **held-out calibration** files,
+as FALCON's few-shot rules allow. Scored on those same files, these checkpoints are therefore **[I] in corpus**,
+not a days-since-training measurement: on M1 they reach R² 0.78–0.92 at 19 days, higher than at 6 days. They are
+not on the leaderboard. A decay curve for NDT3 needs a fine-tune on held-in data only.
+
 **Status:** pending author confirmation, mainly the H1 question for `big_350m_2kh`. Until it is confirmed, NDT3
 350M results on H1 are reported with a [?] mark and left out of the confirmatory Q1 comparison
 (`ANALYSIS_PLAN.md`).
