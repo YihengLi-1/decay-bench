@@ -10,7 +10,8 @@ decay_bench reports, for every decoder, **R² as a function of days since traini
 (R² against log2(1 + days), with a bootstrap CI), next to a **per-session normalization control**. It runs on
 the public [FALCON benchmark](https://snel-repo.github.io/falcon/) (Karpowicz et al., NeurIPS 2024) datasets.
 
-See [LEADERBOARD.md](LEADERBOARD.md).
+See [LEADERBOARD.md](LEADERBOARD.md). The confirmatory analysis is pre-registered in
+[ANALYSIS_PLAN.md](ANALYSIS_PLAN.md); everything currently on the leaderboard is exploratory.
 
 ![decay curves](figures/decay_curves.png)
 
