@@ -1,5 +1,7 @@
 # decay_bench: how fast do neural decoders decay across days?
 
+[![tests](https://github.com/YihengLi-1/decay-bench/actions/workflows/tests.yml/badge.svg)](https://github.com/YihengLi-1/decay-bench/actions/workflows/tests.yml)
+
 Intracortical decoders lose accuracy from one recording day to the next, which is why people with implanted
 BCIs recalibrate so often. New models (pretrained transformers, permutation-invariant decoders, test-time
 adaptation) are often reported to be more stable, but stability is rarely measured as a function of the number
@@ -61,10 +63,20 @@ python -m decay_bench.run --leaderboard
 Please also report the decoder with and without your normalization or adaptation step, so the gain over
 per-session z-scoring is visible.
 
+### Models that need their own environment
+
+Some models only run in their own codebase (POYO in torch_brain, NDT3 in its repository). For those, write a
+small entry script that loads the recordings with `decay_bench.data.load_task`, scores them with
+`decay_bench.protocols.r2` on the same split (`Recording.split_index()`), and writes
+`results/{task}_{protocol}_{name}.json` with the fields `task`, `protocol`, `model`, `source` and `rows`
+(one `{"train", "test", "gap", "r2"}` per scored recording). `python -m decay_bench.run --leaderboard` picks it up
+and recomputes the summary from the rows. [`poyo_entry.py`](poyo_entry.py) and [`ndt3_entry.py`](ndt3_entry.py)
+are worked examples; a pull request with your entry script and its results file is the easiest way to add a model.
+
 ## Setup
 
 ```bash
-pip install falcon-challenge scikit-learn pandas
+pip install -e ".[falcon]"
 dandi download https://dandiarchive.org/dandiset/000941/draft   # M1 (0.3 GB); H1 is 000954 (0.1 GB)
 export FALCON_DATA=/path/to/dandisets
 python -m pytest tests

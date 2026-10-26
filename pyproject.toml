@@ -1,0 +1,15 @@
+[project]
+name = "decay-bench"
+version = "0.1.0"
+description = "How fast do neural decoders decay across days? R2 vs days since training, next to a per-session normalization control, on FALCON."
+requires-python = ">=3.10"
+dependencies = ["numpy", "scipy", "scikit-learn", "pandas"]
+
+[project.optional-dependencies]
+falcon = ["falcon-challenge"]
+gru = ["torch"]
+plot = ["matplotlib"]
+test = ["pytest", "torch"]
+
+[tool.setuptools]
+packages = ["decay_bench"]
