@@ -51,3 +51,11 @@ def test_collapsed_decoders_get_no_slope():
     rows = [dict(train="t", test=str(i), gap=g, r2=-3.0) for i, g in enumerate([2, 5, 9])]
     s = summarize(rows)
     assert s["slope"] is None and s["collapsed"] == 1.0
+
+
+def test_gru_learns_synthetic_mapping():
+    from decay_bench.models import GRUDecoder
+    from decay_bench.protocols import score
+    recs = [_rec("a", "held_in_calib", date(2020, 1, 1), 0), _rec("b", "held_in_calib", date(2020, 1, 1), 1)]
+    dec = GRUDecoder("train", hidden=32, steps=300).fit(recs)
+    assert score(dec, _rec("c", "held_in_calib", date(2020, 1, 1), 2)) > 0.2

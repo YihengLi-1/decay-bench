@@ -67,6 +67,38 @@ def leaderboard():
     print("\n".join(lines))
 
 
+def figure():
+    r"""One panel per task x protocol, one fixed colour per entry. Protocol A plots each held-out day; protocol B
+    averages pairs within gap bins (1-3, 4-7, 8-14, 15-30, 31+ days), plotted at the bin's mean gap."""
+    import matplotlib
+    matplotlib.use("Agg")
+    import matplotlib.pyplot as plt
+    entries = [json.loads(p.read_text()) for p in sorted(RESULTS.glob("*.json"))] + list(official_entries())
+    names = sorted({e["model"] for e in entries})
+    colour = {n: plt.cm.tab10(i % 10) for i, n in enumerate(names)}
+    panels = sorted({(e["task"], e["protocol"]) for e in entries})
+    fig, axs = plt.subplots(1, len(panels), figsize=(3.4 * len(panels), 3.3), squeeze=False)
+    bins = [(1, 3), (4, 7), (8, 14), (15, 30), (31, 400)]
+    for ax, (task, prot) in zip(axs[0], panels):
+        for e in [e for e in entries if e["task"] == task and e["protocol"] == prot]:
+            rows = [r for r in e["rows"] if r["gap"] > 0]
+            groups = ([[r for r in rows if r["gap"] == g] for g in sorted({r["gap"] for r in rows})] if prot == "A"
+                      else [[r for r in rows if lo <= r["gap"] <= hi] for lo, hi in bins])
+            groups = [g for g in groups if g]
+            x = [np.mean([r["gap"] for r in g]) for g in groups]
+            y = [np.mean(np.clip([r["r2"] for r in g], -1, None)) for g in groups]
+            ax.plot(x, y, "o", ls="--" if "official" in e["model"] else "-", ms=3.5, lw=1.4, color=colour[e["model"]])
+        ax.axhline(0, color="k", lw=0.5)
+        ax.set_title(f"{task.upper()} · protocol {prot}", fontsize=9)
+        ax.set_xlabel("days since training", fontsize=8); ax.set_ylim(-1.05, 0.9); ax.tick_params(labelsize=7)
+    axs[0][0].set_ylabel("R² (clipped at -1)", fontsize=8)
+    handles = [plt.Line2D([], [], color=colour[n], ls="--" if "official" in n else "-", marker="o", ms=3.5) for n in names]
+    fig.legend(handles, names, loc="lower center", ncol=len(names), fontsize=7, frameon=False)
+    fig.tight_layout(rect=(0, 0.08, 1, 1))
+    (ROOT / "figures").mkdir(exist_ok=True)
+    fig.savefig(ROOT / "figures" / "decay_curves.png", dpi=160)
+
+
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("--task"); ap.add_argument("--protocol", choices=["A", "B"]); ap.add_argument("--model")
@@ -74,6 +106,7 @@ if __name__ == "__main__":
     a = ap.parse_args()
     if a.leaderboard:
         leaderboard()
+        figure()
     else:
         s = run(a.task, a.protocol, a.model, a.tag, ckpt=a.ckpt)["summary"]
         print(json.dumps(s, indent=1))

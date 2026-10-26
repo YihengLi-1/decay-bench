@@ -91,8 +91,60 @@ class SpintDecoder:
         return pred
 
 
+class GRUDecoder(RidgeDecoder):
+    r"""One-layer GRU on the same smoothed, z-scored inputs as the ridge decoder (same two normalization
+    options), trained on random 1 s chunks of the training recordings and run over a whole recording at test
+    time. Small on purpose (CPU, minutes): it is the nonlinear counterpart of the ridge baseline, not a tuned
+    model."""
+
+    def __init__(self, norm="train", hidden=128, steps=3000, chunk=50, seed=0):
+        super().__init__(norm)
+        self.hidden, self.steps, self.chunk, self.seed = hidden, steps, chunk, seed
+
+    def fit(self, recs):
+        import torch
+        torch.manual_seed(self.seed)
+        rng = np.random.default_rng(self.seed)
+        X = [smooth(r.x) for r in recs]
+        allx = np.concatenate(X)
+        self.mu, self.sd = allx.mean(0), allx.std(0) + 1e-6
+        Z = [torch.tensor((x - self.mu) / self.sd, dtype=torch.float32) for x in X]
+        Y = [torch.tensor(np.nan_to_num(r.y), dtype=torch.float32) for r in recs]
+        M = [torch.tensor(r.mask) for r in recs]
+        self.ymu = torch.tensor(np.nanmean(np.concatenate([r.y[r.mask] for r in recs]), 0), dtype=torch.float32)
+        self.ysd = torch.tensor(np.nanstd(np.concatenate([r.y[r.mask] for r in recs]), 0) + 1e-6, dtype=torch.float32)
+        self.rnn = torch.nn.GRU(allx.shape[1], self.hidden, batch_first=True)
+        self.head = torch.nn.Linear(self.hidden, recs[0].y.shape[1])
+        opt = torch.optim.Adam(list(self.rnn.parameters()) + list(self.head.parameters()), lr=1e-3)
+        lens = np.array([len(z) for z in Z])
+        for _ in range(self.steps):
+            b = rng.choice(len(Z), 32, p=lens / lens.sum())
+            st = [rng.integers(0, lens[i] - self.chunk) for i in b]
+            zb = torch.stack([Z[i][s:s + self.chunk] for i, s in zip(b, st)])
+            yb = torch.stack([Y[i][s:s + self.chunk] for i, s in zip(b, st)])
+            mb = torch.stack([M[i][s:s + self.chunk] for i, s in zip(b, st)])
+            out = self.head(self.rnn(zb)[0])
+            loss = (((out - (yb - self.ymu) / self.ysd) ** 2).mean(-1) * mb).sum() / mb.sum().clamp(min=1)
+            opt.zero_grad(); loss.backward(); opt.step()
+        return self
+
+    def predict(self, rec, h):
+        import torch
+        x = smooth(rec.x)
+        if self.norm == "session":
+            mu, sd = x[:h].mean(0), np.maximum(x[:h].std(0), 0.25 * self.sd)
+        else:
+            mu, sd = self.mu, self.sd
+        with torch.no_grad():
+            z = torch.tensor((x - mu) / sd, dtype=torch.float32)[None]
+            out = self.head(self.rnn(z)[0])[0] * self.ysd + self.ymu
+        return out.numpy()[h:]
+
+
 MODELS = {
     "ridge_raw": lambda **kw: RidgeDecoder("train"),
     "ridge_zsess": lambda **kw: RidgeDecoder("session"),
     "spint": lambda ckpt, **kw: SpintDecoder(ckpt),
+    "gru_raw": lambda **kw: GRUDecoder("train"),
+    "gru_zsess": lambda **kw: GRUDecoder("session"),
 }

@@ -12,6 +12,8 @@ the public [FALCON benchmark](https://snel-repo.github.io/falcon/) (Karpowicz et
 
 See [LEADERBOARD.md](LEADERBOARD.md).
 
+![decay curves](figures/decay_curves.png)
+
 ## Protocols
 
 Both use only FALCON's public calibration files: held-in calibration (training days) and held-out calibration
