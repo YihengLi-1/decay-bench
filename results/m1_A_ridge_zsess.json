@@ -1,0 +1,36 @@
+{
+ "task": "m1",
+ "protocol": "A",
+ "model": "ridge_zsess",
+ "source": "local",
+ "rows": [
+  {
+   "train": "all_held_in",
+   "test": "sub-MonkeyL-held-out-calib_ses-20121004_behavior+ecephys",
+   "gap": 6,
+   "r2": 0.47441280379125483
+  },
+  {
+   "train": "all_held_in",
+   "test": "sub-MonkeyL-held-out-calib_ses-20121017_behavior+ecephys",
+   "gap": 19,
+   "r2": 0.19107439304855312
+  },
+  {
+   "train": "all_held_in",
+   "test": "sub-MonkeyL-held-out-calib_ses-20121024_behavior+ecephys",
+   "gap": 26,
+   "r2": 0.22312103377170278
+  }
+ ],
+ "summary": {
+  "4-7d": 0.47441280379125483,
+  "15-30d": 0.20709771341012795,
+  "slope": -0.14418584628224573,
+  "slope_ci": [
+   -0.1870747586353492,
+   0.07401765658532758
+  ],
+  "n_pairs": 3
+ }
+}

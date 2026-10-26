@@ -1,0 +1,104 @@
+{
+ "task": "h1",
+ "protocol": "A",
+ "model": "ridge_zsess",
+ "source": "local",
+ "rows": [
+  {
+   "train": "all_held_in",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250126T113454",
+   "gap": 6,
+   "r2": 0.2942617518456186
+  },
+  {
+   "train": "all_held_in",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250126T114029",
+   "gap": 6,
+   "r2": 0.08875445628417468
+  },
+  {
+   "train": "all_held_in",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250127T120333",
+   "gap": 7,
+   "r2": -0.19093413260155215
+  },
+  {
+   "train": "all_held_in",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250127T120826",
+   "gap": 7,
+   "r2": -0.044482858721391995
+  },
+  {
+   "train": "all_held_in",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250129T112555",
+   "gap": 9,
+   "r2": 0.20055125319261874
+  },
+  {
+   "train": "all_held_in",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250129T113059",
+   "gap": 9,
+   "r2": -0.07986029334414678
+  },
+  {
+   "train": "all_held_in",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250202T113958",
+   "gap": 13,
+   "r2": -0.06445398749818092
+  },
+  {
+   "train": "all_held_in",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250202T114452",
+   "gap": 13,
+   "r2": -0.006050525297632834
+  },
+  {
+   "train": "all_held_in",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250203T113515",
+   "gap": 14,
+   "r2": -0.07008449763218741
+  },
+  {
+   "train": "all_held_in",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250203T114018",
+   "gap": 14,
+   "r2": -0.1406708151048534
+  },
+  {
+   "train": "all_held_in",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250206T112219",
+   "gap": 17,
+   "r2": -0.02680193030010271
+  },
+  {
+   "train": "all_held_in",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250206T112712",
+   "gap": 17,
+   "r2": 0.02662198011278404
+  },
+  {
+   "train": "all_held_in",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250209T111826",
+   "gap": 20,
+   "r2": -0.10787708142811993
+  },
+  {
+   "train": "all_held_in",
+   "test": "sub-HumanPitt-held-out-calib_ses-19250209T112327",
+   "gap": 20,
+   "r2": 0.09355292913507914
+  }
+ ],
+ "summary": {
+  "4-7d": 0.03689980420171228,
+  "8-14d": -0.026761477614063767,
+  "15-30d": -0.0036260256200898663,
+  "collapsed": 0.0,
+  "n_pairs": 14,
+  "slope": -0.06649751782402932,
+  "slope_ci": [
+   -0.20425378575484968,
+   0.07816513272138462
+  ]
+ }
+}

@@ -1,0 +1,36 @@
+{
+ "task": "m1",
+ "protocol": "A",
+ "model": "ridge_raw",
+ "source": "local",
+ "rows": [
+  {
+   "train": "all_held_in",
+   "test": "sub-MonkeyL-held-out-calib_ses-20121004_behavior+ecephys",
+   "gap": 6,
+   "r2": -3.125508012348641
+  },
+  {
+   "train": "all_held_in",
+   "test": "sub-MonkeyL-held-out-calib_ses-20121017_behavior+ecephys",
+   "gap": 19,
+   "r2": -2.48243562188627
+  },
+  {
+   "train": "all_held_in",
+   "test": "sub-MonkeyL-held-out-calib_ses-20121024_behavior+ecephys",
+   "gap": 26,
+   "r2": -1.283039364416215
+  }
+ ],
+ "summary": {
+  "4-7d": -3.125508012348641,
+  "15-30d": -1.8827374931512426,
+  "slope": 4.639358565956195e-17,
+  "slope_ci": [
+   -1.0342580455902117e-15,
+   5.464531854597098e-16
+  ],
+  "n_pairs": 3
+ }
+}

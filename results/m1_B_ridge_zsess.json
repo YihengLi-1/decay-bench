@@ -1,0 +1,164 @@
+{
+ "task": "m1",
+ "protocol": "B",
+ "model": "ridge_zsess",
+ "source": "local",
+ "rows": [
+  {
+   "train": "2012-09-24",
+   "test": "sub-MonkeyL-held-in-calib_ses-20120926_behavior+ecephys",
+   "gap": 2,
+   "r2": 0.34957354382212785
+  },
+  {
+   "train": "2012-09-24",
+   "test": "sub-MonkeyL-held-in-calib_ses-20120927_behavior+ecephys",
+   "gap": 3,
+   "r2": 0.3221392114028075
+  },
+  {
+   "train": "2012-09-24",
+   "test": "sub-MonkeyL-held-in-calib_ses-20120928_behavior+ecephys",
+   "gap": 4,
+   "r2": 0.31920661032327124
+  },
+  {
+   "train": "2012-09-24",
+   "test": "sub-MonkeyL-held-out-calib_ses-20121004_behavior+ecephys",
+   "gap": 10,
+   "r2": 0.4852138636679318
+  },
+  {
+   "train": "2012-09-24",
+   "test": "sub-MonkeyL-held-out-calib_ses-20121017_behavior+ecephys",
+   "gap": 23,
+   "r2": 0.29745122347645964
+  },
+  {
+   "train": "2012-09-24",
+   "test": "sub-MonkeyL-held-out-calib_ses-20121024_behavior+ecephys",
+   "gap": 30,
+   "r2": 0.25404118662536485
+  },
+  {
+   "train": "2012-09-26",
+   "test": "sub-MonkeyL-held-in-calib_ses-20120924_behavior+ecephys",
+   "gap": 2,
+   "r2": 0.4883323812763065
+  },
+  {
+   "train": "2012-09-26",
+   "test": "sub-MonkeyL-held-in-calib_ses-20120927_behavior+ecephys",
+   "gap": 1,
+   "r2": 0.4603069642227968
+  },
+  {
+   "train": "2012-09-26",
+   "test": "sub-MonkeyL-held-in-calib_ses-20120928_behavior+ecephys",
+   "gap": 2,
+   "r2": 0.3174897657805637
+  },
+  {
+   "train": "2012-09-26",
+   "test": "sub-MonkeyL-held-out-calib_ses-20121004_behavior+ecephys",
+   "gap": 8,
+   "r2": 0.4583947767888469
+  },
+  {
+   "train": "2012-09-26",
+   "test": "sub-MonkeyL-held-out-calib_ses-20121017_behavior+ecephys",
+   "gap": 21,
+   "r2": 0.3335295138672311
+  },
+  {
+   "train": "2012-09-26",
+   "test": "sub-MonkeyL-held-out-calib_ses-20121024_behavior+ecephys",
+   "gap": 28,
+   "r2": 0.3406840189222129
+  },
+  {
+   "train": "2012-09-27",
+   "test": "sub-MonkeyL-held-in-calib_ses-20120924_behavior+ecephys",
+   "gap": 3,
+   "r2": 0.3942659577631835
+  },
+  {
+   "train": "2012-09-27",
+   "test": "sub-MonkeyL-held-in-calib_ses-20120926_behavior+ecephys",
+   "gap": 1,
+   "r2": 0.5168243491514664
+  },
+  {
+   "train": "2012-09-27",
+   "test": "sub-MonkeyL-held-in-calib_ses-20120928_behavior+ecephys",
+   "gap": 1,
+   "r2": 0.4657038547086923
+  },
+  {
+   "train": "2012-09-27",
+   "test": "sub-MonkeyL-held-out-calib_ses-20121004_behavior+ecephys",
+   "gap": 7,
+   "r2": 0.40024932848857786
+  },
+  {
+   "train": "2012-09-27",
+   "test": "sub-MonkeyL-held-out-calib_ses-20121017_behavior+ecephys",
+   "gap": 20,
+   "r2": 0.2486205806023951
+  },
+  {
+   "train": "2012-09-27",
+   "test": "sub-MonkeyL-held-out-calib_ses-20121024_behavior+ecephys",
+   "gap": 27,
+   "r2": 0.34163421332808547
+  },
+  {
+   "train": "2012-09-28",
+   "test": "sub-MonkeyL-held-in-calib_ses-20120924_behavior+ecephys",
+   "gap": 4,
+   "r2": 0.4960385499740966
+  },
+  {
+   "train": "2012-09-28",
+   "test": "sub-MonkeyL-held-in-calib_ses-20120926_behavior+ecephys",
+   "gap": 2,
+   "r2": 0.38888577781638506
+  },
+  {
+   "train": "2012-09-28",
+   "test": "sub-MonkeyL-held-in-calib_ses-20120927_behavior+ecephys",
+   "gap": 1,
+   "r2": 0.42991988264946207
+  },
+  {
+   "train": "2012-09-28",
+   "test": "sub-MonkeyL-held-out-calib_ses-20121004_behavior+ecephys",
+   "gap": 6,
+   "r2": 0.45822608700371936
+  },
+  {
+   "train": "2012-09-28",
+   "test": "sub-MonkeyL-held-out-calib_ses-20121017_behavior+ecephys",
+   "gap": 19,
+   "r2": 0.2868059178192294
+  },
+  {
+   "train": "2012-09-28",
+   "test": "sub-MonkeyL-held-out-calib_ses-20121024_behavior+ecephys",
+   "gap": 26,
+   "r2": 0.18399790565989824
+  }
+ ],
+ "summary": {
+  "1-3d": 0.4133441688593792,
+  "4-7d": 0.41843014394741623,
+  "8-14d": 0.47180432022838936,
+  "15-30d": 0.2858455700376096,
+  "slope": -0.03778130118100556,
+  "slope_ci": [
+   -0.055783990266368995,
+   -0.01977861209564213
+  ],
+  "n_pairs": 24
+ }
+}
