@@ -2,7 +2,7 @@
 
 R2 by days since training (protocol A: since the last held-in day; protocol B: between training and test day), and the decay slope of R2 against log2(1 + days) with a 95% bootstrap CI. Less negative slope = slower decay.
 
-## H1 · protocol A
+## H1 · protocol A · R2
 
 | model | 4-7d | 8-14d | 15-30d | slope [95% CI] | collapsed | pairs | source |
 |---|---|---|---|---|---|---|---|
@@ -11,7 +11,7 @@ R2 by days since training (protocol A: since the last held-in day; protocol B: b
 | ridge_raw | 0.08 | -0.10 | -0.10 | -0.184 [-0.319, -0.066] | 0% | 14 | local |
 | gru_zsess | 0.39 | 0.21 | 0.09 | -0.200 [-0.349, -0.010] | 0% | 14 | local |
 
-## H1 · protocol B
+## H1 · protocol B · R2
 
 | model | 1-3d | 4-7d | 8-14d | 15-30d | 31-400d | slope [95% CI] | collapsed | pairs | source |
 |---|---|---|---|---|---|---|---|---|---|
@@ -22,7 +22,21 @@ R2 by days since training (protocol A: since the last held-in day; protocol B: b
 | gru_raw | 0.14 | -0.03 | -0.14 | -0.22 | -0.19 | -0.103 [-0.125, -0.077] | 0% | 149 | local |
 | ridge_raw | -0.04 | -0.35 | -0.34 | -0.74 | -0.80 | -0.143 [-0.233, -0.039] | 15% | 149 | local |
 
-## M1 · protocol A
+## KAYA-CLA · protocol B · balanced accuracy
+
+| model | 1-3d | 4-7d | 8-14d | 15-30d | 31-400d | slope [95% CI] | collapsed | pairs | source |
+|---|---|---|---|---|---|---|---|---|---|
+| riemann_recenter | 0.50 | 0.67 | 0.36 | 0.61 | 0.41 | +0.190 [-0.040, +0.508] | 0% | 30 | local |
+| riemann_raw | 0.48 | 0.60 | 0.40 | 0.55 | 0.39 | +0.047 [-0.157, +0.258] | 0% | 30 | local |
+
+## KAYA-HALT · protocol B · balanced accuracy
+
+| model | 1-3d | 4-7d | 8-14d | 15-30d | 31-400d | slope [95% CI] | collapsed | pairs | source |
+|---|---|---|---|---|---|---|---|---|---|
+| riemann_recenter | 0.40 | 0.38 | 0.36 | 0.37 | 0.39 | +0.041 [+0.008, +0.074] | 0% | 46 | local |
+| riemann_raw | 0.32 | 0.28 | 0.30 | 0.34 | 0.31 | +0.019 [-0.012, +0.045] | 0% | 46 | local |
+
+## M1 · protocol A · R2
 
 | model | 4-7d | 15-30d | slope [95% CI] | collapsed | pairs | source |
 |---|---|---|---|---|---|---|
@@ -32,7 +46,7 @@ R2 by days since training (protocol A: since the last held-in day; protocol B: b
 | ridge_zsess | 0.47 | 0.21 | -0.144 [-0.187, +0.074] | 0% | 3 | local |
 | ridge_raw | -3.13 | -1.88 | n/a (collapsed) | 100% | 3 | local |
 
-## M1 · protocol B
+## M1 · protocol B · R2
 
 | model | 1-3d | 4-7d | 8-14d | 15-30d | slope [95% CI] | collapsed | pairs | source |
 |---|---|---|---|---|---|---|---|---|
@@ -43,7 +57,7 @@ R2 by days since training (protocol A: since the last held-in day; protocol B: b
 | GRU (official) | -0.05 | 0.01 | -0.23 | -0.55 | -0.145 [-0.254, -0.021] | 16% | 49 | FALCON authors, private test |
 | ridge_raw | -0.57 | -4.81 | -11.74 | -7.37 | n/a (collapsed) | 58% | 24 | local |
 
-## M2 · protocol B
+## M2 · protocol B · R2
 
 | model | 1-3d | 4-7d | 8-14d | 15-30d | 31-400d | slope [95% CI] | collapsed | pairs | source |
 |---|---|---|---|---|---|---|---|---|---|

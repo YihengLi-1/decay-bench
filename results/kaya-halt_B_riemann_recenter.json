@@ -1,0 +1,300 @@
+{
+ "task": "kaya-halt",
+ "protocol": "B",
+ "model": "riemann_recenter",
+ "source": "local",
+ "metric": "score",
+ "metric_name": "balanced accuracy",
+ "rows": [
+  {
+   "train": "A:2016-02-23",
+   "test": "HaLT-SubjectA-160308-6St-LRHandLegTongue",
+   "gap": 14,
+   "score": 0.48068453214852774
+  },
+  {
+   "train": "A:2016-02-23",
+   "test": "HaLT-SubjectA-160310-6St-LRHandLegTongue",
+   "gap": 16,
+   "score": 0.5313907196066233
+  },
+  {
+   "train": "A:2016-03-08",
+   "test": "HaLT-SubjectA-160223-6St-LRHandLegTongue",
+   "gap": 14,
+   "score": 0.5169144184522824
+  },
+  {
+   "train": "A:2016-03-08",
+   "test": "HaLT-SubjectA-160310-6St-LRHandLegTongue",
+   "gap": 2,
+   "score": 0.5789662865942993
+  },
+  {
+   "train": "A:2016-03-10",
+   "test": "HaLT-SubjectA-160223-6St-LRHandLegTongue",
+   "gap": 16,
+   "score": 0.5220677621616561
+  },
+  {
+   "train": "A:2016-03-10",
+   "test": "HaLT-SubjectA-160308-6St-LRHandLegTongue",
+   "gap": 2,
+   "score": 0.4711886582876355
+  },
+  {
+   "train": "B:2016-02-18",
+   "test": "HaLT-SubjectB-160225-6St-LRHandLegTongue",
+   "gap": 7,
+   "score": 0.2816582275478502
+  },
+  {
+   "train": "B:2016-02-18",
+   "test": "HaLT-SubjectB-160229-6St-LRHandLegTongue",
+   "gap": 11,
+   "score": 0.2356020081945479
+  },
+  {
+   "train": "B:2016-02-25",
+   "test": "HaLT-SubjectB-160218-6St-LRHandLegTongue",
+   "gap": 7,
+   "score": 0.2902748522626836
+  },
+  {
+   "train": "B:2016-02-25",
+   "test": "HaLT-SubjectB-160229-6St-LRHandLegTongue",
+   "gap": 4,
+   "score": 0.22981807884652672
+  },
+  {
+   "train": "B:2016-02-29",
+   "test": "HaLT-SubjectB-160218-6St-LRHandLegTongue",
+   "gap": 11,
+   "score": 0.199052047097404
+  },
+  {
+   "train": "B:2016-02-29",
+   "test": "HaLT-SubjectB-160225-6St-LRHandLegTongue",
+   "gap": 4,
+   "score": 0.23215149340046834
+  },
+  {
+   "train": "C:2016-02-24",
+   "test": "HaLT-SubjectC-160302-6St-LRHandLegTongue",
+   "gap": 7,
+   "score": 0.5681505983781603
+  },
+  {
+   "train": "C:2016-03-02",
+   "test": "HaLT-SubjectC-160224-6St-LRHandLegTongue",
+   "gap": 7,
+   "score": 0.5819980455255703
+  },
+  {
+   "train": "E:2016-02-19",
+   "test": "HaLT-SubjectE-160226-6St-LRHandLegTongue",
+   "gap": 7,
+   "score": 0.39895554069073075
+  },
+  {
+   "train": "E:2016-02-19",
+   "test": "HaLT-SubjectE-160304-6St-LRHandLegTongue",
+   "gap": 14,
+   "score": 0.36669204903563085
+  },
+  {
+   "train": "E:2016-02-26",
+   "test": "HaLT-SubjectE-160219-6St-LRHandLegTongue",
+   "gap": 7,
+   "score": 0.4745764492796049
+  },
+  {
+   "train": "E:2016-02-26",
+   "test": "HaLT-SubjectE-160304-6St-LRHandLegTongue",
+   "gap": 7,
+   "score": 0.47303449683453086
+  },
+  {
+   "train": "E:2016-03-04",
+   "test": "HaLT-SubjectE-160219-6St-LRHandLegTongue",
+   "gap": 14,
+   "score": 0.4293243520898355
+  },
+  {
+   "train": "E:2016-03-04",
+   "test": "HaLT-SubjectE-160226-6St-LRHandLegTongue",
+   "gap": 7,
+   "score": 0.40813543448000417
+  },
+  {
+   "train": "F:2016-02-02",
+   "test": "HaLT-SubjectF-160203-6St-LRHandLegTongue",
+   "gap": 1,
+   "score": 0.41179285184203906
+  },
+  {
+   "train": "F:2016-02-02",
+   "test": "HaLT-SubjectF-160204-6St-LRHandLegTongue",
+   "gap": 2,
+   "score": 0.3450765151389616
+  },
+  {
+   "train": "F:2016-02-03",
+   "test": "HaLT-SubjectF-160202-6St-LRHandLegTongue",
+   "gap": 1,
+   "score": 0.4139426315364441
+  },
+  {
+   "train": "F:2016-02-03",
+   "test": "HaLT-SubjectF-160204-6St-LRHandLegTongue",
+   "gap": 1,
+   "score": 0.39914896933507177
+  },
+  {
+   "train": "F:2016-02-04",
+   "test": "HaLT-SubjectF-160202-6St-LRHandLegTongue",
+   "gap": 2,
+   "score": 0.33034075580432903
+  },
+  {
+   "train": "F:2016-02-04",
+   "test": "HaLT-SubjectF-160203-6St-LRHandLegTongue",
+   "gap": 1,
+   "score": 0.4129180690426755
+  },
+  {
+   "train": "G:2016-03-01",
+   "test": "HaLT-SubjectG-160322-6St-LRHandLegTongue",
+   "gap": 21,
+   "score": 0.2976628348582367
+  },
+  {
+   "train": "G:2016-03-01",
+   "test": "HaLT-SubjectG-160412-6St-LRHandLegTongue",
+   "gap": 42,
+   "score": 0.3966325620578099
+  },
+  {
+   "train": "G:2016-03-22",
+   "test": "HaLT-SubjectG-160301-6St-LRHandLegTongue",
+   "gap": 21,
+   "score": 0.32684144527363984
+  },
+  {
+   "train": "G:2016-03-22",
+   "test": "HaLT-SubjectG-160412-6St-LRHandLegTongue",
+   "gap": 21,
+   "score": 0.34845543815124796
+  },
+  {
+   "train": "G:2016-04-12",
+   "test": "HaLT-SubjectG-160301-6St-LRHandLegTongue",
+   "gap": 42,
+   "score": 0.3826621412952053
+  },
+  {
+   "train": "G:2016-04-12",
+   "test": "HaLT-SubjectG-160322-6St-LRHandLegTongue",
+   "gap": 21,
+   "score": 0.26807985548996777
+  },
+  {
+   "train": "H:2016-07-20",
+   "test": "HaLT-SubjectH-160722-6St-LRHandLegTongue",
+   "gap": 2,
+   "score": 0.2854588209670303
+  },
+  {
+   "train": "H:2016-07-22",
+   "test": "HaLT-SubjectH-160720-6St-LRHandLegTongue",
+   "gap": 2,
+   "score": 0.30352955175951907
+  },
+  {
+   "train": "I:2016-06-09",
+   "test": "HaLT-SubjectI-160628-6St-LRHandLegTongue",
+   "gap": 19,
+   "score": 0.16162580509798644
+  },
+  {
+   "train": "I:2016-06-28",
+   "test": "HaLT-SubjectI-160609-6St-LRHandLegTongue",
+   "gap": 19,
+   "score": 0.1999654893163946
+  },
+  {
+   "train": "K:2016-10-27",
+   "test": "HaLT-SubjectK-161108-6St-LRHandLegTongue",
+   "gap": 12,
+   "score": 0.3795888459920936
+  },
+  {
+   "train": "K:2016-11-08",
+   "test": "HaLT-SubjectK-161027-6St-LRHandLegTongue",
+   "gap": 12,
+   "score": 0.4753928736502598
+  },
+  {
+   "train": "L:2016-11-16",
+   "test": "HaLT-SubjectL-161205-6St-LRHandLegTongue",
+   "gap": 19,
+   "score": 0.7175095888532633
+  },
+  {
+   "train": "L:2016-12-05",
+   "test": "HaLT-SubjectL-161116-6St-LRHandLegTongue",
+   "gap": 19,
+   "score": 0.612924754803067
+  },
+  {
+   "train": "M:2016-11-08",
+   "test": "HaLT-SubjectM-161117-6St-LRHandLegTongue",
+   "gap": 9,
+   "score": 0.2387177882555865
+  },
+  {
+   "train": "M:2016-11-08",
+   "test": "HaLT-SubjectM-161124-6St-LRHandLegTongue",
+   "gap": 16,
+   "score": 0.20093955929821775
+  },
+  {
+   "train": "M:2016-11-17",
+   "test": "HaLT-SubjectM-161108-6St-LRHandLegTongue",
+   "gap": 9,
+   "score": 0.2894393542095723
+  },
+  {
+   "train": "M:2016-11-17",
+   "test": "HaLT-SubjectM-161124-6St-LRHandLegTongue",
+   "gap": 7,
+   "score": 0.28489816057837636
+  },
+  {
+   "train": "M:2016-11-24",
+   "test": "HaLT-SubjectM-161108-6St-LRHandLegTongue",
+   "gap": 16,
+   "score": 0.2581412217433668
+  },
+  {
+   "train": "M:2016-11-24",
+   "test": "HaLT-SubjectM-161117-6St-LRHandLegTongue",
+   "gap": 7,
+   "score": 0.3032882417657202
+  }
+ ],
+ "summary": {
+  "1-3d": 0.3952363110308005,
+  "4-7d": 0.3772449682991856,
+  "8-14d": 0.36114082691257404,
+  "15-30d": 0.3704670395544723,
+  "31-400d": 0.3896473516765076,
+  "collapsed": 0.0,
+  "n_pairs": 46,
+  "slope": 0.0408639981404245,
+  "slope_ci": [
+   0.007886670784691472,
+   0.07431736283802466
+  ]
+ }
+}

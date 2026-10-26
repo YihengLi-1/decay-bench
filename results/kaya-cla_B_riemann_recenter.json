@@ -1,0 +1,204 @@
+{
+ "task": "kaya-cla",
+ "protocol": "B",
+ "model": "riemann_recenter",
+ "source": "local",
+ "metric": "score",
+ "metric_name": "balanced accuracy",
+ "rows": [
+  {
+   "train": "B:2015-10-19",
+   "test": "CLA-SubjectB-151020-3St-LRHand",
+   "gap": 1,
+   "score": 0.38992099645694417
+  },
+  {
+   "train": "B:2015-10-19",
+   "test": "CLA-SubjectB-151215-3St-LRHand",
+   "gap": 57,
+   "score": 0.38953148038115354
+  },
+  {
+   "train": "B:2015-10-20",
+   "test": "CLA-SubjectB-151019-3St-LRHand",
+   "gap": 1,
+   "score": 0.4030853194251887
+  },
+  {
+   "train": "B:2015-10-20",
+   "test": "CLA-SubjectB-151215-3St-LRHand",
+   "gap": 56,
+   "score": 0.4373869413085099
+  },
+  {
+   "train": "B:2015-12-15",
+   "test": "CLA-SubjectB-151019-3St-LRHand",
+   "gap": 57,
+   "score": 0.4326709359389098
+  },
+  {
+   "train": "B:2015-12-15",
+   "test": "CLA-SubjectB-151020-3St-LRHand",
+   "gap": 56,
+   "score": 0.3854888756849541
+  },
+  {
+   "train": "C:2015-11-26",
+   "test": "CLA-SubjectC-151216-3St-LRHand",
+   "gap": 20,
+   "score": 0.7042692722431285
+  },
+  {
+   "train": "C:2015-11-26",
+   "test": "CLA-SubjectC-151223-3St-LRHand",
+   "gap": 27,
+   "score": 0.6681294227834615
+  },
+  {
+   "train": "C:2015-12-16",
+   "test": "CLA-SubjectC-151126-3St-LRHand",
+   "gap": 20,
+   "score": 0.6811249752426223
+  },
+  {
+   "train": "C:2015-12-16",
+   "test": "CLA-SubjectC-151223-3St-LRHand",
+   "gap": 7,
+   "score": 0.6268777116978436
+  },
+  {
+   "train": "C:2015-12-23",
+   "test": "CLA-SubjectC-151126-3St-LRHand",
+   "gap": 27,
+   "score": 0.5196210470720275
+  },
+  {
+   "train": "C:2015-12-23",
+   "test": "CLA-SubjectC-151216-3St-LRHand",
+   "gap": 7,
+   "score": 0.6710041592394534
+  },
+  {
+   "train": "E:2015-12-25",
+   "test": "CLA-SubjectE-160119-3St-LRHand",
+   "gap": 25,
+   "score": 0.4807329884919202
+  },
+  {
+   "train": "E:2015-12-25",
+   "test": "CLA-SubjectE-160122-3St-LRHand",
+   "gap": 28,
+   "score": 0.6692105758467314
+  },
+  {
+   "train": "E:2016-01-19",
+   "test": "CLA-SubjectE-151225-3St-LRHand",
+   "gap": 25,
+   "score": 0.49944543473955244
+  },
+  {
+   "train": "E:2016-01-19",
+   "test": "CLA-SubjectE-160122-3St-LRHand",
+   "gap": 3,
+   "score": 0.5931667112445145
+  },
+  {
+   "train": "E:2016-01-22",
+   "test": "CLA-SubjectE-151225-3St-LRHand",
+   "gap": 28,
+   "score": 0.6272837305517044
+  },
+  {
+   "train": "E:2016-01-22",
+   "test": "CLA-SubjectE-160119-3St-LRHand",
+   "gap": 3,
+   "score": 0.5013165457048532
+  },
+  {
+   "train": "F:2015-09-16",
+   "test": "CLA-SubjectF-150917-3St-LRHand",
+   "gap": 1,
+   "score": 0.4229789681235623
+  },
+  {
+   "train": "F:2015-09-16",
+   "test": "CLA-SubjectF-150928-3St-LRHand",
+   "gap": 12,
+   "score": 0.34241627493161236
+  },
+  {
+   "train": "F:2015-09-17",
+   "test": "CLA-SubjectF-150916-3St-LRHand",
+   "gap": 1,
+   "score": 0.46981299161327295
+  },
+  {
+   "train": "F:2015-09-17",
+   "test": "CLA-SubjectF-150928-3St-LRHand",
+   "gap": 11,
+   "score": 0.3212758611531618
+  },
+  {
+   "train": "F:2015-09-28",
+   "test": "CLA-SubjectF-150916-3St-LRHand",
+   "gap": 12,
+   "score": 0.36708860759493667
+  },
+  {
+   "train": "F:2015-09-28",
+   "test": "CLA-SubjectF-150917-3St-LRHand",
+   "gap": 11,
+   "score": 0.4025611853002586
+  },
+  {
+   "train": "J:2017-05-04",
+   "test": "CLA-SubjectJ-170508-3St-LRHand-Inter",
+   "gap": 4,
+   "score": 0.6240076951495328
+  },
+  {
+   "train": "J:2017-05-04",
+   "test": "CLA-SubjectJ-170510-3St-LRHand-Inter",
+   "gap": 6,
+   "score": 0.6603854824295178
+  },
+  {
+   "train": "J:2017-05-08",
+   "test": "CLA-SubjectJ-170504-3St-LRHand-Inter",
+   "gap": 4,
+   "score": 0.6978029832015721
+  },
+  {
+   "train": "J:2017-05-08",
+   "test": "CLA-SubjectJ-170510-3St-LRHand-Inter",
+   "gap": 2,
+   "score": 0.6117542508042062
+  },
+  {
+   "train": "J:2017-05-10",
+   "test": "CLA-SubjectJ-170504-3St-LRHand-Inter",
+   "gap": 6,
+   "score": 0.736284976928477
+  },
+  {
+   "train": "J:2017-05-10",
+   "test": "CLA-SubjectJ-170508-3St-LRHand-Inter",
+   "gap": 2,
+   "score": 0.62300740353007
+  }
+ ],
+ "summary": {
+  "1-3d": 0.5018803983628265,
+  "4-7d": 0.6693938347743994,
+  "8-14d": 0.35833548224499234,
+  "15-30d": 0.6062271808713935,
+  "31-400d": 0.41126955832838186,
+  "collapsed": 0.0,
+  "n_pairs": 30,
+  "slope": 0.19008090728575774,
+  "slope_ci": [
+   -0.03974256773664059,
+   0.507905590047605
+  ]
+ }
+}

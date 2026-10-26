@@ -53,13 +53,13 @@ def slope(gaps, r2s):
     return float(np.polyfit(np.log2(1 + np.asarray(gaps, float)), np.clip(r2s, -1, None), 1)[0])
 
 
-def summarize(rows, n_boot=5000, seed=0):
+def summarize(rows, n_boot=5000, seed=0, key="r2"):
     r"""Mean R2 per gap bin, the share of collapsed pairs (R2 < -1), and the decay slope with a bootstrap CI
     (None when more than half the pairs collapsed). For protocol B the slope is fitted per
     training day (off-diagonal pairs) and the bootstrap resamples training days; for protocol A there is one
     training set, so the bootstrap resamples test recordings."""
     bins = [(1, 3), (4, 7), (8, 14), (15, 30), (31, 400)]
-    out = {f"{lo}-{hi}d": float(np.mean([r["r2"] for r in rows if lo <= r["gap"] <= hi]))
+    out = {f"{lo}-{hi}d": float(np.mean([r[key] for r in rows if lo <= r["gap"] <= hi]))
            for lo, hi in bins if any(lo <= r["gap"] <= hi for r in rows)}
     rng = np.random.default_rng(seed)
     by_train = defaultdict(list)
@@ -67,19 +67,19 @@ def summarize(rows, n_boot=5000, seed=0):
         if r["gap"] > 0:
             by_train[r["train"]].append(r)
     if len(by_train) > 1:
-        s = np.array([slope([r["gap"] for r in v], [r["r2"] for r in v]) for v in by_train.values()])
+        s = np.array([slope([r["gap"] for r in v], [r[key] for r in v]) for v in by_train.values()])
         boots = [rng.choice(s, len(s)).mean() for _ in range(n_boot)]
         est = s.mean()
     else:
         v = next(iter(by_train.values()))
-        g, y = np.array([r["gap"] for r in v]), np.array([r["r2"] for r in v])
+        g, y = np.array([r["gap"] for r in v]), np.array([r[key] for r in v])
         est = slope(g, y)
         boots = []
         for _ in range(n_boot):
             i = rng.choice(len(g), len(g))
             if len(set(g[i])) > 1:
                 boots.append(slope(g[i], y[i]))
-    out["collapsed"] = float(np.mean([r["r2"] < -1 for r in rows]))
+    out["collapsed"] = float(np.mean([r[key] < -1 for r in rows]))
     out["n_pairs"] = len(rows)
     if out["collapsed"] > 0.5:                          # clipped fit is meaningless when most pairs collapsed
         out["slope"], out["slope_ci"] = None, None

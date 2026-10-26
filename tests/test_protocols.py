@@ -59,3 +59,16 @@ def test_gru_learns_synthetic_mapping():
     recs = [_rec("a", "held_in_calib", date(2020, 1, 1), 0), _rec("b", "held_in_calib", date(2020, 1, 1), 1)]
     dec = GRUDecoder("train", hidden=32, steps=300).fit(recs)
     assert score(dec, _rec("c", "held_in_calib", date(2020, 1, 1), 2)) > 0.2
+
+
+def test_riemann_mean_and_tangent():
+    from decay_bench.eeg import riemann_mean, tangent
+    rng = np.random.default_rng(0)
+    A = rng.normal(size=(4, 4)); M = A @ A.T + 4 * np.eye(4)
+    assert np.allclose(riemann_mean(np.stack([M, M, M])), M)
+    t = tangent(np.stack([M, M])[:, None], M[None])          # a point at the reference maps to zero
+    assert np.allclose(t, 0, atol=1e-8)
+    B = rng.normal(size=(4, 4)); N = B @ B.T + 4 * np.eye(4)
+    G = riemann_mean(np.stack([M, N]))                        # the geodesic midpoint is equidistant
+    d = lambda P, Q: np.linalg.norm(tangent(P[None, None], Q[None]))
+    assert abs(d(M, G) - d(N, G)) < 1e-6
